@@ -1,0 +1,23 @@
+.layer-toggle {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.toggle-button,
+.toggle-button-toggled {
+    width: 150px;
+}
+
+.toggle-button {
+    background-color: grey;
+}	
+
+.toggle-button-toggled {
+    background-color: lightgrey; /* Change this to your desired color */
+}
+
+.toggle-item-label {
+    margin-left: 5px;
+}	
