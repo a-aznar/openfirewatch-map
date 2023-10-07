@@ -14,6 +14,7 @@ import wildfiresData from '../mock_data/wildfires.json';
 import { DATE_TIME_UP_TO_HOURS_FORMAT } from '../utils/date-utils';
 import AddWildfireOnMapClick from './AddWildfirePopup';
 import AddWildfirePopup from './AddWildfirePopup';
+import AddWildfirePopupInfo from './WildFirePopupInfo';
 
 const DEFAULT_MAP_ZOOM = 2;
 const DEFAULT_MAP_CENTER_COORDS = [51.505, -0.09];
@@ -39,6 +40,10 @@ function CustomMapContainer({
     const addWildfire = (position) => {
         setCustomWildfires([...customWildfires, position]);
     };
+
+    const renderWildfireMarkers = (features, idx) => (
+        <AddWildfirePopupInfo features={features} idx={idx} key={`${features.properties.date}-wildfires-${idx}`} />
+    );
 
     const renderCustomWildfireMarkers = () => (
         customWildfires.map((position, idx) => (
