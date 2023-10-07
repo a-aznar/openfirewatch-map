@@ -1,0 +1,21 @@
+.wind-arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #555; /* Color de la flecha, puedes cambiarlo */
+    position: relative;
+    display: inline-block;
+  }
+  
+  .arrow-body {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top:15px solid #555; /* Color de la flecha, puedes cambiarlo */
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
