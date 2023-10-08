@@ -4,14 +4,22 @@ import PropTypes from 'prop-types';
 
 import './DemoButton.css';
 
-function DemoButton({ isDemoMode, toggleDemoMode }) {
-    const buttonClassName = isDemoMode ? 'demo-button-toggled' : 'demo-button';
-    const buttonLabel = isDemoMode ? 'Show Normal Mode' : 'Show DEMO Mode';
-
+function DemoButton({ isDemoMode, setDemoMode }) {
     return (
-        <button className={buttonClassName} onClick={toggleDemoMode}>
-            <label className='demo-button-label'>{buttonLabel}</label>
-        </button>
+        <div className='button-container'>
+            <button 
+                className={`live-button ${isDemoMode ? '' : 'active'}`} 
+                onClick={() => setDemoMode(false)}
+            >
+                <label className='button-label'>live</label>
+            </button>
+            <button 
+                className={`demo-button ${isDemoMode ? 'active' : ''}`} 
+                onClick={() => setDemoMode(true)}
+            >
+                <label className='button-label demo-button-label'>simulation</label>
+            </button>
+        </div>
     );
 }
 

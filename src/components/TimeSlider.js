@@ -12,9 +12,9 @@ function getClosestPastHour() {
     return moment().startOf('day');
 }
 
-function TimeSlider({ stepHours, onDateChange }) {
+function TimeSlider({ stepHours, onDateChange, isDemoMode }) {
     const initialValue = getClosestPastHour();
-    const [currentStep, setCurrentStep] = useState(0);  // Initial step is 0, which represents the closest past hour.
+    const [currentStep, setCurrentStep] = useState(0);
 
     const handleChange = (newStep) => {
         setCurrentStep(newStep);
@@ -26,14 +26,14 @@ function TimeSlider({ stepHours, onDateChange }) {
         <div className="slider-container">
             <input
                 type="range"
-                min={-STEP_BUFFER}
+                min={isDemoMode ? 0 : -STEP_BUFFER}
                 max={STEP_BUFFER}
                 step={1}
                 defaultValue={0}
                 onChange={event => handleChange(Number(event.target.value))}
             />
-            <label>
-                {initialValue.clone().add(currentStep * stepHours, 'hours').format(DATE_TIME_UP_TO_HOURS_FORMAT) + ':00'}
+            <label className='slider-label'>
+                {initialValue.clone().add(currentStep * stepHours, 'hours').format(DATE_TIME_UP_TO_HOURS_FORMAT) + ':00 (UTC)'}
             </label>
         </div>
     );

@@ -1,0 +1,49 @@
+.navbar {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    background: #121111;
+    z-index: 9999;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.logo {
+    width: 20px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+.project-name {
+    color: #FFF;
+    font-family: 'Mplus 1p', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 15px;
+}
+
+.buttons-container {
+    display: flex;
+    margin-right: 125px;
+}
+
+.nav-button {
+    color: #FFF;
+    font-family: 'Mplus 1p', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 45px;
+    background-color: transparent;
+    text-decoration: none;
+}

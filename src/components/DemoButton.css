@@ -1,25 +1,43 @@
+
 /* src/components/DemoButton.css */
-.demo-button-toggled,
-.demo-button {
+.button-container {
     position: absolute;
-    bottom: 30px;
-    right: 10px;
+    top: 15px;
+    left: calc(50% - 155px);
+    z-index: 1000;
+}
+
+.demo-button,
+.live-button {
+    width: 170px;
     color: white;
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    z-index: 1000;
+    border-radius: 41px;
+}
+
+.live-button {
+    background-color: #121111;
+    position: relative;
 }
 
 .demo-button {
-    background-color: #008CBA; /* Blue */
+    background-color: #FF5906;
+    position: relative;
+    left: -50px
 }
 
-.demo-button-toggled {
-    background-color: grey;
+.button-label {
+    margin-left: 5px;
+}
+
+.active {
+    z-index: 1002;
 }
 
 .demo-button-label {
-    margin-left: 5px;
+    margin-left: 20px;
+
 }

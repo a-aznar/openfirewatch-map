@@ -9,3 +9,9 @@
     border-radius: 5px;
     z-index: 1000;
 }
+
+.slider-label {
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+}

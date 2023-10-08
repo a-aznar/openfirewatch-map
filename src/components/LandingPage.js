@@ -17,6 +17,10 @@ function MapComponent() {
     const [isDemoMode, setIsDemoMode] = useState(false);
     const [dateToShow, setDateToShow] = useState();
 
+    const toggleDemoMode = () => {
+        setIsDemoMode(prevMode => !prevMode);
+    };
+
     return (
         <div className="map-container">
             <CustomMapContainer
@@ -28,7 +32,7 @@ function MapComponent() {
             />
             <DemoButton
                 isDemoMode={isDemoMode}
-                setDemoMode={setIsDemoMode}
+                toggleDemoMode={toggleDemoMode}
             />
             <LayerToggle
                 showRiskAreas={showRiskAreas}

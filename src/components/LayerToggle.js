@@ -1,9 +1,9 @@
 import React from 'react';
-import './LayerToggle.css'; // Import the CSS file
+import './LayerToggle.css';
 
 function LayerToggle({ showRiskAreas, setShowRiskAreas, showSpreadAreas, setShowSpreadAreas, showWildfires, setShowWildfires }) {
     const riskAreasToggleText = showRiskAreas ? 'Hide Risk Areas' : 'Show Risk Areas';
-    const spreadAreasToggleText = showSpreadAreas ? 'Hide Spread Areas' : 'Show Spread Areas';
+    const spreadAreasToggleText = showSpreadAreas ? 'Hide Fire Spread Areas' : 'Show Fire Spread Areas';
     const wildfiresToggleText = showWildfires ? 'Hide Wildfires' : 'Show Wildfires';
 
     const toggledButtonClassName = 'toggle-button-toggled';
@@ -16,7 +16,7 @@ function LayerToggle({ showRiskAreas, setShowRiskAreas, showSpreadAreas, setShow
                     onClick={() => setShowRiskAreas(!showRiskAreas)}
                     className={showRiskAreas ? toggledButtonClassName : buttonClassName}
                 >
-                    <img src="icon-url-here" alt={riskAreasToggleText} />
+                    <img className='toggle-item-icon' src="https://icons.veryicon.com/png/o/construction-tools/project-icon/danger-zone.png" alt={riskAreasToggleText} />
                 </button>
                 <label className="toggle-item-label">{riskAreasToggleText}</label>
             </div>
@@ -25,7 +25,7 @@ function LayerToggle({ showRiskAreas, setShowRiskAreas, showSpreadAreas, setShow
                     onClick={() => setShowSpreadAreas(!showSpreadAreas)}
                     className={showSpreadAreas ? toggledButtonClassName : buttonClassName}
                 >
-                    <img src="icon-url-here" alt={spreadAreasToggleText} />
+                    <img className='toggle-item-icon' src="https://static.vecteezy.com/system/resources/previews/001/188/562/original/fire-png.png" alt={spreadAreasToggleText} />
                 </button>
                 <label className="toggle-item-label">{spreadAreasToggleText}</label>
             </div>
@@ -34,7 +34,7 @@ function LayerToggle({ showRiskAreas, setShowRiskAreas, showSpreadAreas, setShow
                     onClick={() => setShowWildfires(!showWildfires)}
                     className={showWildfires ? toggledButtonClassName : buttonClassName}
                 >
-                    <img src="icon-url-here" alt={wildfiresToggleText} />
+                    <img className='toggle-item-icon' src="https://static.vecteezy.com/system/resources/previews/001/188/562/original/fire-png.png" alt={wildfiresToggleText} />
                 </button>
                 <label className="toggle-item-label">{wildfiresToggleText}</label>
             </div>

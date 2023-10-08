@@ -7,7 +7,9 @@
 
 .toggle-button,
 .toggle-button-toggled {
-    width: 150px;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
 }
 
 .toggle-button {
@@ -15,9 +17,16 @@
 }	
 
 .toggle-button-toggled {
-    background-color: lightgrey; /* Change this to your desired color */
+    background-color: lightgrey;
 }
 
 .toggle-item-label {
     margin-left: 5px;
 }	
+
+.toggle-item-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: -3px;
+    margin-top: 2px;
+}
