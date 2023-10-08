@@ -10,6 +10,8 @@ import { areaStyles } from '../utils/area-styles';
 
 import riskAreasData from '../mock_data/risk-areas.json';
 import wildfiresData from '../mock_data/wildfires.json';
+import wildfireImage from '../media/wildfire.webp';
+
 import { DATE_TIME_UP_TO_HOURS_FORMAT } from '../utils/date-utils';
 import AddWildfirePopup from './AddWildfirePopup';
 import WildfirePopup from './WildfirePopup';
@@ -18,7 +20,7 @@ const DEFAULT_MAP_ZOOM = 2;
 const DEFAULT_MAP_CENTER_COORDS = [51.505, -0.09];
 
 const WILDFIRE_ICON = new L.Icon({
-    iconUrl: 'https://static.vecteezy.com/system/resources/previews/001/188/562/original/fire-png.png',
+    iconUrl: wildfireImage,
     iconSize: [25, 25]
 });
 
