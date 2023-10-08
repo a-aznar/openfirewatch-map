@@ -1,3 +1,30 @@
+# Introduction
+In the face of escalating wildfire threats, Open Firewatch is a visionary project poised to reshape how we approach fire management. As wildfires continue to devastate landscapes and communities worldwide, the urgency of adopting innovative solutions has never been more evident.
+
+This groundbreaking initiative seeks to empower communities to actively engage in fire management, transforming them from vulnerable targets into resilient partners in fire prevention and response. By leveraging the collective knowledge, resources, and commitment of local residents, Open Firewatch aims to build a comprehensive framework that fosters collaboration, promotes sustainable practices, and mitigates the risks associated with wildfires.
+
+# High-Level Summary
+
+# Project Details
+
+# Use of Artificial Intelligence
+
+Artemis from NASA Space Apps Spain 2023.\
+ChatGPT from OpenIA.
+
+# Space Agency Data
+ - Firms from NASA
+ - Windy
+ - NASA EOSDIS
+ - USGS Earth Explorer
+ - NOAA Satellites
+ - Copernicus Open access hub
+
+# References
+ - ChatGPT
+ - Firms documentation
+ - Windy API
+   
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,32 +66,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
