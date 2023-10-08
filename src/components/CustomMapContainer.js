@@ -59,7 +59,7 @@ function CustomMapContainer({
 
 const filterDataByDate = (data, date) => {
     return data.features.filter(
-        feature => moment(feature.properties.date).isSame(moment(date, DATE_TIME_UP_TO_HOURS_FORMAT), 'hour')
+        feature => moment(feature.properties.date).isSame(moment(date, DATE_TIME_UP_TO_HOURS_FORMAT), 'day')
     );
 };
 
